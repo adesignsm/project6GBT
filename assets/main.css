@@ -1,0 +1,366 @@
+body {
+	padding: 1%;
+	margin: 0;
+	/*font-family: Helvetica, sans-serif; /*default font*/
+	font-family: "DIGITAL";
+	color: #fff;
+}
+
+@font-face {
+	font-family: "DIGITAL";
+	src: url(ds_digital/DS-DIGIT.TTF);
+}
+
+li {
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	padding: 1%;
+	font-size: 80%;
+	border: 1px solid #fff;
+}
+
+a:hover {
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+/*Music files*/ /*DEBUGGING PURPORSES*/
+audio {
+	position: absolute;
+	z-index: 10;
+	display: none;
+}
+
+/*Loading page*/
+#loading-page {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 1;
+	z-index: 10;
+}
+
+#alarm-clock {
+	padding-top: 20%;
+	text-align: center;
+	font-size: 450%;
+	color: blue;
+	font-family: "DIGITAL";
+}
+
+#loading-bar {
+	position: fixed;
+	top: 50%;
+	left: 36%;
+	height: .3%;
+	width: 0%;
+	background-color: blue;
+	border-radius: 50%;
+}
+
+#details-container {
+	margin-top: 20%;
+	top: 80%;
+	color: blue;
+	font-family: "DIGITAL";
+	font-size: 120%;
+	text-align: center;
+	display: none;
+}
+
+/*Interchanging BG image*/
+#interchanging-bg-image {
+	position: fixed;
+	top: -40%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#bg1 {
+	display: block;
+}
+
+#bg2 {
+	display: none;
+}
+
+#bg3 {
+	display: none;
+}
+
+#bg4 {
+	display: none;
+}
+
+/*Absolute positioned*/
+#close-container-button {
+	position: fixed;
+	top: 7%;
+	left: 90%;
+	font-weight: bold;
+	width: 100%;
+	font-size: 100%;
+	z-index: 1;
+	display: none;
+	cursor: pointer;
+	padding: 1%;
+}
+
+#close-container-button:hover {
+	background-color: #000;
+}
+
+#music-controls-title {
+	position: absolute;
+	top: 75%;
+	left: 5%;
+	font-size: 100%;
+	font-weight: bold;
+	color: #fff;
+	z-index: 1;
+}
+
+#song-title {
+	position: absolute;
+	top: 75%;
+	left: 20%;
+	font-size: 100%;
+	font-weight: bold;
+	color: #fff;
+	z-index: 1;
+}
+
+#smart-display-container-title-about {
+	position: absolute;
+	top: 5%;
+	width: 100%;
+	font-size: 100%;
+	font-weight: bold;
+	color: #fff;
+	z-index: 1;
+}
+
+#smart-display-container-title-track {
+	position: absolute;
+	top: 5%;
+	width: 100%;
+	font-size: 100%;
+	font-weight: bold;
+	color: #fff;
+	z-index: 1;
+}
+
+#trademark-footer {
+	position: absolute;
+	top: 93%;
+	left: 5%;
+	width: 30%;
+	font-size: 80%;
+	font-weight: lighter;
+	z-index: 1;
+}
+
+/*Main details*/
+#main-title {
+	position: fixed;
+	left: 5%;
+	padding: 1%;
+	color: #fff;
+	z-index: 1;
+	cursor: pointer;
+	font-family: "DIGITAL";
+}
+
+#main-title:hover {
+	background-color: #000;
+}
+
+/*Menu*/
+#menu-container {
+	position: fixed;
+	top: 25%;
+	left: 3%;
+	height: auto;
+	width: auto;
+	font-size: 120%;
+	font-family: "DIGITAL";
+}
+
+#about-li .line {
+	position: absolute;
+	margin-top: 20%;
+	height: 1.5%;
+	width: 0%;
+	background-color: #fff;
+}
+
+#track-li .line {
+	position: absolute;
+	margin-top: 20%;
+	height: 1.5%;
+	width: 0%;
+	background-color: #fff;
+}
+
+#menu-ul li {
+	padding-bottom: 30%;
+}
+
+/*Display*/
+#display-container {
+	position: fixed;
+	top: 10%;
+	height: 70%;
+	width: 25%;
+}
+
+.display {
+	left: 100%;
+}
+
+.track-display {
+	left: 100%;
+}
+
+.about-display {
+	left: 100%;
+}
+
+#tracklist-container {
+	padding: 10%;
+	display: none;
+}
+
+#tracklist-container h2 {
+	padding: 2%;
+	background-color: #000;
+}
+
+#tracklist-container ul {
+	margin-left: -10%;
+}
+
+#tracklist-container li {
+	margin-bottom: 4%;
+	font-size: 120%;
+	font-weight: bolder;
+}
+
+#about-container {
+	padding: 10%;
+}
+
+#about-container h2 {
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	padding-right: -5%;
+	background-color: #000;
+}
+
+#about-container p {
+	line-height: 130%;
+}
+
+/*Music player*/
+#music-player-container {
+	position: absolute;
+	top: 80%;
+	left: 5%;
+	height: 10%;
+	width: 30%;
+	border: 1px solid #fff;
+}
+
+.music-controls {
+	cursor: pointer;
+	font-size: 120%;
+	padding: 1%;
+}
+
+.music-controls:hover {
+	background-color: #000;
+}
+
+#play-pause-button {
+	position: absolute;
+	top: 5%;
+	left: 2%;
+	height: auto;
+	width: auto;
+}
+
+#prev-button {
+	position: absolute;
+	top: 5%;
+	left: 65%;
+	height: 20%;
+	width: auto;
+}
+
+#next-button {
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	height: 20%;
+	width: auto;
+}
+
+progress[value] {
+	position: absolute;
+	top: 60%;
+	left: 2%;
+	height: 5%;
+	width: 75%;
+	z-index: 10;
+	border: none;
+
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: transparent;
+	border-radius: 100px;
+}
+
+progress[value]::-webkit-progress-value {
+	border-radius: 100px;
+	background-color: #fff;
+}
+
+#progress-bar1 {
+	display: block;
+}
+
+#progress-bar2 {
+	display: none;
+}
+
+#progress-bar3 {
+	display: none;
+}
+
+#progress-bar4 {
+	display: none;
+}
+
+#download-button {
+	position: absolute;
+	top: 10%;
+	left: 80%;
+	z-index: 5;
+	cursor: pointer;
+}

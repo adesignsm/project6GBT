@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang = "eng">
+	<head>
+		<title> Splash Page | GBT </title>
+
+		<link rel = "stylesheet" type = "text/css" href = "assets/main.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type = "text/javascript" src = "scripts/main.js"></script>
+		<script type = "text/javascript" src = "scripts/alarmClock.js"></script>
+		<script type = "text/javascript" src = "scripts/moveBackground.js"></script>
+	</head>
+
+	<body>
+		<!--Loading page-->
+		<div id = "loading-page">
+			<h1 class = "fin-anim" id = "alarm-clock"> 999:999:999 </h1>
+			<div class = "fin-anim" id = "loading-bar"> </div>
+
+			<div class = "fin-anim" id = "details-container">
+				<p> [ padding-top: 20% ] </br></br>
+					[ margin: 0 ] </br></br>
+					[ z-index: 10 ] </br></br>
+				</p>
+			</div>
+		</div>
+
+		<div id = "container">
+			<!--Music files-->
+			<audio id = "song1" type = "audio/mp3" src = "media/music/song1.mp3" controls></audio>
+			<audio id = "song2" type = "audio/mp3" src = "media/music/song2.mp3"></audio>
+			<audio id = "song3" type = "audio/mp3" src = "media/music/song3.mp3"></audio>
+			<audio id = "song4" type = "audio/mp3" src = "media/music/song4.mp3"></audio>
+
+			<!--Absolute positioned-->
+			<p class = "music-player" id = "music-controls-title"> [ Music Group Name ] </p>
+			<p class = "music-player" id = "song-title"> [ Song Title ] </p>
+			<div id = "close-container-button"> [ Close ] 
+				<img id = "close-img" src = "" />
+			</div>
+			<p id = "trademark-footer"> [ Trademark over here. Made by Akash Mulye. Music supplied by "musician" ] </p>
+
+			<!--Interchanging background images-->
+			<div id = "interchanging-bg-image">
+				<img id = "bg1" src = "media/track1BG.jpeg" />
+				<img id = "bg2" src = "media/track2BG.jpeg" />
+				<img id = "bg3" src = "media/track3BG.jpg" />
+				<img id = "bg4" src = "media/track4BG.jpg" />
+			</div>
+
+			<!--From here downward is main content-->
+			<h1 id = "main-title"> [ Title ] </h1>
+
+			<!--Menu-->
+			<div id = "menu-container">
+				<ul id = "menu-ul">
+					<li id = "about-li"> <div class = "line"> </div> [ About ] </li>
+					<li id = "track-li"> <div class = "line"> </div> [ Track List ] </li>
+				</ul>
+			</div>
+
+			<!--Display Box-->
+			<div class = "display" id = "display-container">
+				<div class = "about-display" id = "about-container">
+					<h2> [ About ] </h2>
+
+					<p> Lorem ipsum random text yeah i dont really know what to put here
+						but I can tell you that this is an about page and that its going
+						to contain information on whoever the musician is. Other than that
+						yeah this is a mockup that Im creating for fun and for commercial
+						use in the fute. Hope you like it.
+						</br>
+						</br>
+						I can tell you that this is an about page and that its going
+						to contain information on whoever the musician is. Other than that
+						yeah this is a mockup that Im creating for fun and for commercial
+						use in the fute. Hope you like it.
+					</p> 
+				</div>
+
+				<div class = "track-display" id = "tracklist-container">
+					<h2> [ Track List ] </h2>
+
+					<ul id = "tracklist-ul">
+						<li id = "track1"> .Track 1. </li>
+						<li id = "track2"> .Track 2. </li>
+						<li id = "track3"> .Track 3. </li>
+						<li id = "track4"> .Track 4. </li>
+					</ul>
+				</div>
+			</div>
+
+			<!--Music Player-->
+			<div class = "music-player" id = "music-player-container">
+				<div id = "music-controls-container">
+					<div class = "music-controls" id = "play-pause-button"> PLAY/PAUSE 
+					</div>
+
+					<div class = "music-controls" id = "prev-button"> PREV </div>
+					<div class = "music-controls" id = "next-button"> NEXT </div>
+
+					<progress id = "progress-bar1" value = "0" max = "1"></progress>
+					<progress id = "progress-bar2" value = "0" max = "1"></progress>
+					<progress id = "progress-bar3" value = "0" max = "1"></progress>
+					<progress id = "progress-bar4" value = "0" max = "1"></progress>
+				</div>
+
+				<a id = "download-button" download> download </a> <!--Just a sample download button-->
+			</div>
+		</div>
+
+		<script type = "text/javascript" src = "scripts/three.js"></script>
+		<script type = "text/javascript" src = "scripts/OrbitControls.js"></script>
+		<script type = "text/javascript" src = "scripts/AnaglyphEffect.js"></script>
+
+		<script type = "text/javascript" src = "scripts/musicPlayer.js"></script>
+		<script type = "text/javascript" src = "scripts/musicBar.js"></script>
+	</body>
+</html>
